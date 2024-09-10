@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yesihao-buld</title>
+</head>
+<body>
+    <img  id='myimage' onclick="changeImage()"  src="imgs/pic_bulboff.gif" width="100" height="180">
+    <p style="font-size: 15px;">点击灯泡就可以打开和关闭功能</p>
+
+    <script>
+        function changeImage(){
+            const element = document.getElementById('myimage');
+            if(element.src.includes('pic_bulboff.gif')) //判断灯泡关闭状态
+            {
+                element.src = 'imgs/pic_bulbon.gif' //打开灯泡
+            } else
+            {
+                element.src = 'imgs/pic_bulboff.gif'//关闭灯泡
+                document.write
+            }
+            // alert('函数调用成功')
+            // let a = confirm('函数是否调用成功？')
+            // console.log(a);
+        }
+    </script>
+</body>
+</html>
